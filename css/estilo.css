@@ -9,11 +9,13 @@ header {
   background-color: rgb(255, 106, 0);
   box-shadow: 0 0px 20px black;
   position: fixed;
+  z-index: 1;
 }
 
 .header-logo {
   width: calc(3% + 50px);
   padding: 0.6%;
+  margin-left: 1%;
   border-right: 5px rgb(255, 106, 0) solid;
 }
 
@@ -24,24 +26,22 @@ header {
   justify-content: center;
   align-items: end;
   padding: 10px;
-  border: rgb(255, 106, 0) solid;
-  border-width: 0 4px;
   transition: all 0.3s ease;
+
   &:hover {
     background-color: rgba(255, 255, 255, 0.8);
     & div {
       color: rgb(18, 23, 55);
     }
   }
-}
-
-.nav-button div {
-  color: white;
-  font-size: 150%;
-  font-family: "Montserrat";
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
+  & div {
+    color: white;
+    font-size: 150%;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }  
 }
 
 .imagen-centro {
@@ -52,27 +52,26 @@ header {
 }
 
 main {
-  background-color: rgb(103, 205, 242);
-  padding-top: calc(3% + 50px)
-}
+  background-color: rgb(117, 196, 224);
+  padding: calc(3% + 50px) 0;
 
-main h1 {
-  color: rgb(18, 23, 55);
-  padding: 80px;
-  text-align: center;
-  text-decoration: underline;
-  font-family: "Montserrat";
-  font-weight: bold;
-}
-
-main p {
-  color: rgb(18, 23, 55);
-  width: 80%;
-  margin: auto;
-  padding: 40px;
-  font-size: 120%;
-  font-weight: 500;
-  font-family: "Shippori Antique";
+  & h1 {
+    color: rgb(18, 23, 55);
+    padding: 80px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-weight: bold;
+  }
+  & p {
+    color: rgb(18, 23, 55);
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    font-size: 120%;
+    font-weight: 500;
+    font-family: "Shippori Antique";
+  }
 }
 
 #main-carousel {
@@ -89,4 +88,23 @@ main p {
 
 footer {
   display: grid;
+  grid-template-columns: 40%;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-size: 120%;
+  font-family: "Shippori Antique";
+  padding-top: 60px;
+
+  & p {
+    padding: 20px;
+    text-align: center;
+  }
+  & img { 
+    width: 6%;
+    display: inline;
+  }
+  & div {
+    justify-content: center;
+  }
 }

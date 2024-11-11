@@ -2,33 +2,48 @@ section {
   border: solid rgb(18, 23, 55);
   border-width: 5px 0 0 0;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(255, 68, 0, 0.2));
-  box-shadow: 0 0 10px;
+  box-shadow: 0 0 20px black inset;
   padding: 5% 0;
-}
 
-section h2 {
-  color: rgb(18, 23, 55);
-  padding: 40px 10%;
-  text-decoration: underline;
-  font-family: "Montserrat";
-  font-weight: bold;
+  & h2 {
+    color: rgb(18, 23, 55);
+    padding: 40px 10%;
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-weight: bold;
+  }
 }
 
 .contenido-curso {
   display: flex;
   justify-content: center;
+
+  & p {
+    margin: 0;
+    font-family: "Shippori Antique";
+    font-weight: 400;
+    width: 70%;
+  }
+  & img {
+    display: block;
+    width: 20%;
+    outline: 3px solid rgb(18, 23, 55);
+  }
 }
 
-.contenido-curso p {
-  margin: 0;
-  font-family: "Shippori Antique";
-  font-weight: 400;
-  width: 70%;
-}
 
-.contenido-curso img {
-  display: block;
-  width: 20%;
-  outline: 3px solid rgb(18, 23, 55);
+
+@media screen and (max-width: 650px) {
+  .contenido-curso {
+    flex-direction: column;
+
+    & p {
+      width: 100%;
+    }
+
+    & img {
+      width: 60%;
+      margin: auto;
+    }
+  }
 }
