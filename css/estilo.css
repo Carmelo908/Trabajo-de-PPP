@@ -58,7 +58,7 @@ main {
 
 main h1 {
   color: rgb(18, 23, 55);
-  padding: 40px;
+  padding: 80px;
   text-align: center;
   text-decoration: underline;
   font-family: "Montserrat";
@@ -67,14 +67,15 @@ main h1 {
 
 main p {
   color: rgb(18, 23, 55);
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding: 20px;
-  font-size: 140%;
+  padding: 40px;
+  font-size: 120%;
   font-weight: 500;
+  font-family: "Shippori Antique";
 }
 
-#carousel {
+#main-carousel {
   width: 60%;
   margin: auto;
 }
@@ -84,4 +85,8 @@ main p {
   object-position: center;
   height: 400px;
   overflow: hidden;
+}
+
+footer {
+  display: grid;
 }
