@@ -2,7 +2,7 @@ section {
   border: solid rgb(18, 23, 55);
   border-width: 5px 0 0 0;
   width: 100%;
-  box-shadow: 0 0 20px black inset;
+  box-shadow: 0 0 20px -3px black inset;
   padding: 5% 0;
 
   & h2 {
@@ -14,12 +14,17 @@ section {
   }
 }
 
+section:last-of-type {
+  border-bottom: 5px solid rgb(18, 23, 55);
+}
+
 .contenido-curso {
   display: flex;
   justify-content: center;
 
   & p {
     margin: 0;
+    padding: 10px;
     font-family: "Shippori Antique";
     font-weight: 400;
     width: 70%;

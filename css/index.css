@@ -1,0 +1,23 @@
+.imagen-centro {
+  width: 100%;
+  border-bottom: 5px solid var(--font-color);
+}
+
+#main-carousel {
+  width: calc(80% - (10% - 50px));
+  margin: auto;
+  border: 5px var(--font-color) solid;
+}
+
+#carousel .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 400px;
+  overflow: hidden;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  max-width: 90vw;
+}
