@@ -23,13 +23,13 @@
   <header>
     <img src="./img/logos/Logo CFP.png" class="header-logo" alt='Logo del centro "La Criolla"'>
     <nav>
-      <a href="index.html" class="nav-button">
+      <a href="index.php" class="nav-button">
         <div>Sobre nosotros</div>
       </a>
-      <a href="trayectorias.html" class="nav-button">
+      <a href="trayectorias.php" class="nav-button">
         <div>Trayectos</div>
       </a>
-      <a href="inscripciones.html" class="nav-button">
+      <a href="inscripciones.php" class="nav-button">
         <div>Inscripciones</div>
       </a>
     </nav>

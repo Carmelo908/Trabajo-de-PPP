@@ -21,3 +21,31 @@ iframe {
   margin: auto;
   max-width: 90vw;
 }
+.novedades-caja {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 30% 30% 30%;
+  grid-row-gap: 3%;
+  justify-content: space-evenly;
+}
+
+.novedad {
+  border: 5px black solid;
+  border-radius: 10px;
+  max-height: 100vh;
+  padding: 5%;
+
+  & h3 {
+    text-align: center;
+  }
+  & img {
+    max-width: 100%;
+    border: 2px solid black;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .novedades-caja {
+    grid-template-columns: 45% 45%;
+  }
+}
