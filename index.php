@@ -93,12 +93,9 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504.47703392390974!2d-58.107100941317334!3d-31.271095445522374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95adecb04d7457bd%3A0x98aa53d46aa8cd3f!2sR%C3%ADo%20Bermejo%2C%20La%20Criolla%2C%20Entre%20R%C3%ADos!5e1!3m2!1ses-419!2sar!4v1731918205681!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <h2>Novedades</h2>
-    <div class="novedades-caja">
       <?php
       include "script/mostrar_novedades.php"
       ?>
-    </div>
-
   </main>
 
   <footer>
@@ -108,7 +105,7 @@
         <p><img src="img/logos/whatsapp.svg" alt=""> Whatsapp: 345 412 3356</p>
       </div>
       <div class="d-flex copiable" data-clipboard="cfplacriolla@gmail.com">
-        <p><img src="img/logos/mail.svg" alt=""> aAdministración: cfplacriolla@gmail.com</p>
+        <p><img src="img/logos/mail.svg" alt=""> Administración: cfplacriolla@gmail.com</p>
       </div>
       <div class="d-flex copiable" data-clipboard="cfp61.lacriolla@gmail.com">
         <p><img src="img/logos/mail.svg" alt=""> Rectoría: cfp61.lacriolla@gmail.com</p>

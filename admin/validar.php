@@ -1,6 +1,6 @@
 <?php
 
-$conn = require "../script/conectar.php"
+$conn = require "../script/conectar.php";
 
 function test_input($data) {    
   $data = trim($data);
@@ -14,19 +14,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $username = test_input($_POST["username"]);
   $password = test_input($_POST["password"]);
   $result = $conn->query("SELECT * FROM admins");
-  $users = $result->fetchAll();
+  $logged = FALSE;
   
-  foreach($users as $user) {
-    
-    if(($user['username'] == $username) && 
-    ($user['password'] == $password)) {
-      header("location: admin.php");
+  if ($result != NULL) {
+    while ($user = $result->fetch_assoc()) {
+      if( ($user['username'] == $username) && 
+      ($user['password'] == $password) ) {
+        $conn->close();
+        header("location: admin.php");
+      } 
     }
-    else {
-      echo "<script language='javascript'>";
-      echo "alert('WRONG INFORMATION')";
-      echo "</script>";
-      die();
-    }
+  }
+  if ($logged == FALSE) {
+    $conn->close();
+    echo "<h1>Datos incorrectos</h1>";
   }
 }

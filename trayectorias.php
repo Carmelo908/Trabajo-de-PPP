@@ -151,7 +151,7 @@
         <p><img src="img/logos/whatsapp.svg" alt=""> Whatsapp: 345 412 3356</p>
       </div>
       <div class="d-flex copiable" data-clipboard="cfplacriolla@gmail.com">
-        <p><img src="img/logos/mail.svg" alt=""> aAdministración: cfplacriolla@gmail.com</p>
+        <p><img src="img/logos/mail.svg" alt=""> Administración: cfplacriolla@gmail.com</p>
       </div>
       <div class="d-flex copiable" data-clipboard="cfp61.lacriolla@gmail.com">
         <p><img src="img/logos/mail.svg" alt=""> Rectoría: cfp61.lacriolla@gmail.com</p>
